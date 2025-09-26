@@ -5,15 +5,15 @@ const path = require('path');
 const { exec } = require('child_process');
 
 // Ayarlar
-const HTML_FILE_PATH = `file://${path.join(__dirname, 'index.html')}`; // index.html dosyasının tam yolu
-const FRAMES_DIR = path.join(__dirname, 'frames'); // Karelerin kaydedileceği klasör
-const VIDEO_DURATION_SECONDS = 15; // Videonun toplam uzunluğu (saniye)
-const FRAME_RATE = 30; // Saniyedeki kare sayısı (FPS)
+const HTML_FILE_PATH = `file://${path.join(__dirname, 'index.html')}`;
+const FRAMES_DIR = path.join(__dirname, 'frames');
+const VIDEO_DURATION_SECONDS = 35; // <--- DEĞİŞİKLİK: Süreyi 15'ten 35 saniyeye çıkardık.
+const FRAME_RATE = 30;
 const TOTAL_FRAMES = VIDEO_DURATION_SECONDS * FRAME_RATE;
 
-// Çıktı video ayarları (Instagram panoramik oranına yakın)
+// Çıktı video ayarları
 const OUTPUT_WIDTH = 1920;
-const OUTPUT_HEIGHT = 405; // 5120x1080 ile aynı oran (yaklaşık 4.74:1)
+const OUTPUT_HEIGHT = 406; // <--- DEĞİŞİKLİK: Yüksekliği 405'ten 406'ya (çift sayı) değiştirdik.
 
 async function createVideo() {
     console.log('Video oluşturma süreci başlatılıyor...');
