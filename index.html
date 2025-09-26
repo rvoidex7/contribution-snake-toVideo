@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Snake Animation</title>
+    <style>
+        /* Sayfanın tüm kenar boşluklarını sıfırla */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Kaydırma çubuklarını gizle */
+        }
+
+        /* Arka planı GitHub'ın koyu rengi yap ve içeriği ortala */
+        body {
+            background-color: #0D1117; /* GitHub'ın koyu mod arka plan rengi */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* SVG'nin boyutunu ayarla */
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Görüntünün tamamını bozmadan sığdır */
+        }
+    </style>
+</head>
+<body>
+    <img src="https://raw.githubusercontent.com/rvoidex7/rvoidex7/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Grid Snake Animation">
+</body>
+</html>
