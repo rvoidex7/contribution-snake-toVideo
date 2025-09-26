@@ -16,7 +16,7 @@ const VIDEO_CODEC = 'h264_nvenc'; // <--- KENDİ EKRAN KARTINA GÖRE BURAYI DEĞ
 const SVG_URL = 'https://raw.githubusercontent.com/rvoidex7/rvoidex7/output/github-contribution-grid-snake-dark.svg';
 const FRAMES_DIR = path.join(__dirname, 'frames');
 const VIDEO_DURATION_SECONDS = 35; 
-const FRAME_RATE = 30;
+const FRAME_RATE = 120;
 const SLOWDOWN_FACTOR = 10; // Animasyon hızı hala fazlaysa bu değeri arttır.
 
 const TOTAL_FRAMES_TO_CAPTURE = VIDEO_DURATION_SECONDS * FRAME_RATE;
